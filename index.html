@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etanol x Gasolina</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <div class="header">
+        
+        <div class="content-header">
+            <h1>Etanol x Gasolina</h1>
+            <h2>Compare o preço do litro do álcool com o da gasolina e veja qual deles é mais vantajoso financeiramente.</h2>
+        </div>
+    </div>
+
+    <div class="content">
+        <h3>O Etanol vale a pena quando custar até 70% do valor da Gasolina</h3>
+        <p>Preencha os campos abaixo com os preços dos combustíveis que você encontra hoje nos postos e clique no botão “calcular” para saber qual é a melhor opção.</p>
+
+        <div class="flex-content">
+            <form action="#">
+
+                <label for="etanol">Informe o preço do Etanol</label> <br>
+                <input type="text" id="etanol" data-mask="00.00" data-mask-reverse="true">
+
+                <br>
+
+                <label for="gasolina">Informe o preço da Gasolina</label> <br>
+                <input type="text" id="gasolina" data-mask="00.00" data-mask-reverse="true">
+
+                <br>
+
+                <button type="button" id="btn">Calcular</button>
+            </form>
+            
+            <div class="result">
+                <p>Abasteça com: <br> <strong id="msgCombustivel"></strong></p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Projeto desenvolvido pela Coti Informática</p>
+    </div>
+
+    <!-- Ligação entre HTML e JS -->
+    <script src="js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+</body>
+</html>
